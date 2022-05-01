@@ -22,5 +22,5 @@ func NewBirdRouter(controller controller.BirdController) BirdRouter {
 
 func (r *birdRouter) BirdRouterDifinition(e *gin.Engine) {
 	g := e.Group("/bird")
-	g.GET("/", r.controller.Fetch())
+	g.GET("", r.controller.Fetch())
 }
