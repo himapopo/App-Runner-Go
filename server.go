@@ -20,7 +20,7 @@ func main() {
 	birdController := controller.NewBirdController(birdUsecase)
 
 	birdRouter := routes.NewBirdRouter(birdController)
-	birdRouter.BirdRouterDifinition(e)
+	routes.RouterDifinition(e, birdRouter)
 
 	e.Run(":8080")
 }
